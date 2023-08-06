@@ -56,4 +56,30 @@ body {
     text-shadow: darksalmon 2px 0px;
 }
 
-/*  */
+#galtitle{
+    color: grey;
+    text-shadow: 2px 0px 0px wheat;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    grid-auto-rows: 400px; /* Set the height of each row to 400px */
+    grid-gap: 20px; /* Add some spacing between images */
+    justify-content: center; /* Center the grid horizontally */
+    padding: 20px; /* Add padding around the grid */
+}
+
+
+.image-grid li {
+    list-style: none; /* Remove default list-style */
+    margin-bottom: 30px;
+}
+
+.image-grid img {
+    width: 500px;
+    height: 550px;
+    object-fit: cover; /* Preserve aspect ratio and cover the entire container */
+}

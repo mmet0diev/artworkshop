@@ -1,5 +1,14 @@
 /* Site header section styling */
 
+p {
+    color: burlywood;
+    text-shadow: 1px 1px 0px black;
+}
+
+.maincontent{
+    margin-top: 100px;
+}
+
 body {
     background-color: darksalmon;
     margin: 0;
