@@ -2,6 +2,7 @@ body {
     background-color: darksalmon;
     margin: 0;
     padding: 0;
+    position: relative; /* Add relative positioning to establish a new stacking context */
 }
 
 .headersection {
@@ -14,6 +15,7 @@ body {
     padding: 10px 20px;
     display: flex;
     flex-direction: column; /* Stack elements vertically */
+    z-index: 999; /* Set a higher z-index value */
 }
 
 #sitenavigation ul {
@@ -29,25 +31,25 @@ body {
 }
 
 #sitenavigation a {
-    color: wheat;
+    color: darksalmon;
     text-decoration: none;
 }
 
-#sitenavigation a:hover{
-    color: darksalmon;
-    /* background-color:khaki; */
+#sitenavigation a:hover {
+    color: wheat;
     border-radius: 5px;
 }
 
 #sitetitle {
     /* font */
     margin: 0;
-    color: wheat;
-    text-shadow: darksalmon 2px 0px;
+    color: darksalmon;
+    text-shadow: wheat 2px 0px;
     margin-bottom: 20px;
-    margin: auto; /* Center horizontally */
+    margin: auto; 
 }
 
-#sitetitle:hover{
-    color: darksalmon;
+#sitetitle:hover {
+    color: wheat;
+    text-shadow: darksalmon 2px 0px;
 }
