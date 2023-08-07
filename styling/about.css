@@ -1,12 +1,14 @@
 /* Site header section styling */
 
 p {
-    color: burlywood;
-    text-shadow: 1px 1px 0px black;
+    color:brown;
+    text-shadow: -1px -1px 0px #333;
+    font-size: 18px;
 }
 
 .maincontent{
     margin-top: 100px;
+    text-align: center;
 }
 
 body {
@@ -63,6 +65,18 @@ body {
 #sitetitle:hover {
     color: wheat;
     text-shadow: darksalmon 2px 0px;
+    /* font-size: 35px; */
 }
 
 /*  */
+
+#aboutheader{
+    color:brown;
+    text-shadow: 1px 1px 0px black;
+}
+
+#aboutheader:hover{
+    color: bisque;
+    text-shadow: 1px 1px 0px #333;
+    /* font-size: 30px; */
+}

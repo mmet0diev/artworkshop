@@ -1,4 +1,9 @@
 /* Site header section styling */
+p {
+    color:brown;
+    text-shadow: -1px -1px 0px #333;
+    font-size: 18px;
+}
 
 body {
     background-color: darksalmon;
