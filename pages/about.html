@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT</title>
     <link rel="stylesheet" href="../styling/about.css">
+
+    <script>
+        function sendMessage() {
+            const emailInput = document.getElementById("email");
+            const messageInput = document.getElementById("message");
+            
+            const email1 = "mgmmarinoff@gmail.com";
+            const email2 = "maxurt99@gmail.com";
+            
+            const subject = "Message from Art Workshop Website";
+            const body = `Email: ${emailInput.value}%0D%0A%0D%0A${messageInput.value}`;
+            
+            const emailLink = `mailto:${email1},${email2}?subject=${subject}&body=${body}`;
+            
+            window.location.href = emailLink;
+        }
+    </script>
+
 </head>
 <body>
+
     <div class="headersection">
         <h1 id="sitetitle">Art Workshop</h1>
         <nav id="sitenavigation">
@@ -23,6 +42,19 @@
         <p>Welcome to our online artwork store. A place for all art enthusiasts, fans and people with interest and appreciation for fine arts!</p>
         <p>We offer only and exclusively real work of art drawings and paintings made with various materials and techniques used by profound masters in the field.</p>
     </div>
+
+    <div class="contact">
+        <p>For any questions or queries contact us via e-mails:
+            <br>mgmmarinoff@gmail.com
+            <br>maxurt99@gmail.com</p>
+        <br>
+        <input type="email" id="email" placeholder="Your Email">
+        <br>
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <br>
+        <button onclick="sendMessage()">Send Message</button>
+    </div>
+
 
 </body>
 </html>

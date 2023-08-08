@@ -80,3 +80,11 @@ body {
     text-shadow: 1px 1px 0px #333;
     /* font-size: 30px; */
 }
+
+.contact{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
