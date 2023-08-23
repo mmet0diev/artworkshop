@@ -90,32 +90,30 @@ body {
     width: 80%; /* Make the images fill their container */
     height: 80%;
     object-fit: cover; /* Preserve aspect ratio and cover the entire container */
+    border: solid 2px #333;
     margin: 5px;
 }
 
-/* Style for the image container */
 .image-item {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start; /* Align items to the top of the container */
+    margin: 10px;
 }
 
-/* Style for the image description */
 .image-description {
-    margin-left: 10px; /* Adjust as needed */
+    display: flex; /* Use flexbox to align image and text */
+    align-items: flex-start; /* Align items to the top of the container */
     background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
-    padding: 10px;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for separation */
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a shadow for separation */
+    padding: 10px;
 }
 
-.image-description h2 {
-    font-size: 16px;
-    margin: 0;
-    color: brown;
+.image-description img {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
 }
 
-.image-description p {
-    font-size: 14px;
-    margin: 5px 0;
-    color: #333;
+.text {
+    margin-left: 10px; /* Adjust as needed */
+    flex-grow: 1; /* Allow the description text to stretch vertically */
 }
