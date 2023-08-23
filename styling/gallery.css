@@ -87,8 +87,35 @@ body {
 }
 
 .image-grid img {
-    width: 100%; /* Make the images fill their container */
-    height: 100%;
+    width: 80%; /* Make the images fill their container */
+    height: 80%;
     object-fit: cover; /* Preserve aspect ratio and cover the entire container */
+    margin: 5px;
 }
 
+/* Style for the image container */
+.image-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Style for the image description */
+.image-description {
+    margin-left: 10px; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for separation */
+}
+
+.image-description h2 {
+    font-size: 16px;
+    margin: 0;
+    color: brown;
+}
+
+.image-description p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #333;
+}
