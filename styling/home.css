@@ -25,12 +25,12 @@ body {
     z-index: 999; /* Set a higher z-index value */
 }
 
-#sitenavigation ul {
+#sitenavigation ul.page-navigation {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: flex-start; /* Align page navigation items to the left */
 }
 
 #sitenavigation li {
@@ -45,6 +45,57 @@ body {
 #sitenavigation a:hover {
     color: wheat;
     border-radius: 5px;
+}
+
+/* Language Buttons Styles (on the right) */
+.language-buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push language buttons to the right */
+    align-self: flex-end; /* Align language buttons to the bottom of headersection */
+    padding-right: 50px;
+}
+
+/* Language Buttons Styles (on the right) */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Align navigation and language buttons to opposite ends */
+    align-items: center; /* Vertically center align items */
+}
+
+/* Language Buttons Styles (on the right) */
+#en-button {
+    background: none;
+    border: none;
+    color: darksalmon;
+    cursor: pointer;
+    margin-left: 20px; /* Add spacing between buttons */
+    transition: color 0.3s; /* Add a transition for the color property */
+}
+
+#en-button:hover {
+    color: white; /* Change text color to white on hover */
+    background: linear-gradient(45deg, blue, red, blue); /* Apply gradient background */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* For better browser support */
+    color: transparent; /* Make the text transparent */
+}
+
+#bg-button {
+    background: none;
+    border: none;
+    color: darksalmon;
+    cursor: pointer;
+    margin-left: 20px; /* Add spacing between buttons */
+    transition: color 0.3s; /* Add a transition for the color property */
+}
+
+#bg-button:hover {
+    color: white; /* Change text color to white on hover */
+    background: linear-gradient(45deg, white, green, red); /* Apply gradient background */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* For better browser support */
+    color: transparent; /* Make the text transparent */
 }
 
 #sitetitle {
