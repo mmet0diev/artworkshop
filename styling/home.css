@@ -67,7 +67,7 @@ body {
 #en-button {
     background: none;
     border: none;
-    color: darksalmon;
+    color: blue;
     cursor: pointer;
     margin-left: 20px; /* Add spacing between buttons */
     transition: color 0.3s; /* Add a transition for the color property */
@@ -84,7 +84,7 @@ body {
 #bg-button {
     background: none;
     border: none;
-    color: darksalmon;
+    color: green;
     cursor: pointer;
     margin-left: 20px; /* Add spacing between buttons */
     transition: color 0.3s; /* Add a transition for the color property */
