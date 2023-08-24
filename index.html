@@ -20,10 +20,11 @@
             </nav>
             
             <!-- Language Buttons (on the right) -->
-            <div class="language-buttons">
-                <button id="en-button">English</button>
-                <button id="bg-button">Bulgarian</button>
+            <div class="language-flags">
+                <img id="en-flag" src="imgs/enflag.png" alt="English Flag">
+                <img id="bg-flag" src="imgs/bgflag.png" alt="Bulgarian Flag">
             </div>
+            
         </div>
     </div>
     
@@ -43,8 +44,8 @@
     
     <script>
         // Add event listeners to the language buttons
-        document.getElementById('en-button').addEventListener('click', switchToEnHome);
-        document.getElementById('bg-button').addEventListener('click', switchToBgHome);
+        document.getElementById('en-flag').addEventListener('click', switchToEnHome);
+        document.getElementById('bg-flag').addEventListener('click', switchToBgHome);
     </script>
 </body>
 </html>

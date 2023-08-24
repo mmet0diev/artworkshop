@@ -63,40 +63,23 @@ body {
     align-items: center; /* Vertically center align items */
 }
 
-/* Language Buttons Styles (on the right) */
-#en-button {
-    background: none;
-    border: none;
-    color: blue;
+/* Style for language flags */
+.language-flags {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push flags to the right */
+    align-self: flex-end; /* Align flags to the bottom of headersection */
+    padding-right: 20px; /* Add some spacing to the right */
+}
+
+.language-flags img {
     cursor: pointer;
-    margin-left: 20px; /* Add spacing between buttons */
-    transition: color 0.3s; /* Add a transition for the color property */
+    width: 20px; /* Set the width to 20px */
+    height: 20px; /* Set the height to 20px */
+    margin-left: 10px; /* Add spacing between flags */
+    padding-right: 20px;
 }
 
-#en-button:hover {
-    color: white; /* Change text color to white on hover */
-    background: linear-gradient(60deg, blue, red); /* Apply gradient background */
-    background-clip: text; /* Clip the background to the text */
-    -webkit-background-clip: text; /* For better browser support */
-    color: transparent; /* Make the text transparent */
-}
-
-#bg-button {
-    background: none;
-    border: none;
-    color: green;
-    cursor: pointer;
-    margin-left: 20px; /* Add spacing between buttons */
-    transition: color 0.3s; /* Add a transition for the color property */
-}
-
-#bg-button:hover {
-    color: white; /* Change text color to white on hover */
-    background: linear-gradient(45deg, white, green, red); /* Apply gradient background */
-    background-clip: text; /* Clip the background to the text */
-    -webkit-background-clip: text; /* For better browser support */
-    color: transparent; /* Make the text transparent */
-}
 
 #sitetitle {
     /* font */
