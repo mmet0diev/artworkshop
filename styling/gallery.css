@@ -117,3 +117,8 @@ body {
     margin-left: 10px; /* Adjust as needed */
     flex-grow: 1; /* Allow the description text to stretch vertically */
 }
+
+.collections .image-item .image-description h2{ 
+    color: crimson;
+    text-shadow: 1px -1px black;
+}
