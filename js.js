@@ -1,21 +1,24 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', async () => {
     let currentLanguage = "en"; // Default language
 
     // Function to change the language
-    function switchLanguage(language) {
+    async function switchLanguage(language) {
         currentLanguage = language;
-        // Fetch and parse the JSON data for the selected language
-        fetch(`langs/home_langs.json`)
-            .then(response => response.json())
-            .then(data => {
-                // Update the content on your page with the language data
-                document.getElementById('sitetitle').textContent = data[language].sitetitle;
-                document.getElementById('home-link').textContent = data[language].home;
-                document.getElementById('gallery-link').textContent = data[language].gallery;
-                document.getElementById('about-link').textContent = data[language].about;
-                document.getElementById('pic1txt').textContent = data[language].pic1txt;
-                document.getElementById('pic2txt').textContent = data[language].pic2txt;
-            });
+        try {
+            // Fetch and parse the JSON data for the selected language
+            const response = await fetch(`langs/home_langs.json`);
+            const data = await response.json();
+
+            // Update the content on your page with the language data
+            document.getElementById('sitetitle').textContent = data[language].sitetitle;
+            document.getElementById('home-link').textContent = data[language].home;
+            document.getElementById('gallery-link').textContent = data[language].gallery;
+            document.getElementById('about-link').textContent = data[language].about;
+            document.getElementById('pic1txt').textContent = data[language].pic1txt;
+            document.getElementById('pic2txt').textContent = data[language].pic2txt;
+        } catch (error) {
+            console.error("Error fetching or parsing data:", error);
+        }
     }
 
     // Add event listeners to the language flags
