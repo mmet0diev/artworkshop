@@ -75,7 +75,7 @@ body {
 
 #en-button:hover {
     color: white; /* Change text color to white on hover */
-    background: linear-gradient(45deg, blue, red, blue); /* Apply gradient background */
+    background: linear-gradient(60deg, blue, red); /* Apply gradient background */
     background-clip: text; /* Clip the background to the text */
     -webkit-background-clip: text; /* For better browser support */
     color: transparent; /* Make the text transparent */
