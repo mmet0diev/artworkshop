@@ -1,0 +1,19 @@
+{
+    "bg": {
+        "sitetitle": "Магазин за картини",
+        "home": "Начало",
+        "gallery": "Галерия",
+        "about": "За нас",
+        "pic1txt": "Зимен Пейзаж 1",
+        "pic2txt": "Зимен Пейзаж 2"
+    },
+
+    "en": {
+        "sitetitle": "Art Workshop",
+        "home": "Home",
+        "gallery": "Gallery",
+        "about": "About",
+        "pic1txt": "Winter Scape 1",
+        "pic2txt": "Winter Scape 2"
+    }
+}

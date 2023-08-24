@@ -1,29 +1,27 @@
-// Define a function to change the language to English
-function switchToEnHome() {
-    // Fetch and parse the English JSON data
-    fetch('langs/home_en.json')
-        .then(response => response.json())
-        .then(data => {
-            // Update the content on your page with the English data
-            document.getElementById('home-link').textContent = data.home;
-            document.getElementById('gallery-link').textContent = data.gallery;
-            document.getElementById('about-link').textContent = data.about;
-            document.getElementById('pic1').textContent = data.pic1;
-            document.getElementById('pic2').textContent = data.pic2;
-        });
-}
+document.addEventListener('DOMContentLoaded', function () {
+    let currentLanguage = "en"; // Default language
 
-// Define a function to change the language to Bulgarian
-function switchToBgHome() {
-    // Fetch and parse the Bulgarian JSON data
-    fetch('langs/home_bg.json')
-        .then(response => response.json())
-        .then(data => {
-            // Update the content on your page with the Bulgarian data
-            document.getElementById('home-link').textContent = data.home;
-            document.getElementById('gallery-link').textContent = data.gallery;
-            document.getElementById('about-link').textContent = data.about;
-            document.getElementById('pic1').textContent = data.pic1;
-            document.getElementById('pic2').textContent = data.pic2;
-        });
-}
+    // Function to change the language
+    function switchLanguage(language) {
+        currentLanguage = language;
+        // Fetch and parse the JSON data for the selected language
+        fetch(`langs/home_langs.json`)
+            .then(response => response.json())
+            .then(data => {
+                // Update the content on your page with the language data
+                document.getElementById('sitetitle').textContent = data[language].sitetitle;
+                document.getElementById('home-link').textContent = data[language].home;
+                document.getElementById('gallery-link').textContent = data[language].gallery;
+                document.getElementById('about-link').textContent = data[language].about;
+                document.getElementById('pic1txt').textContent = data[language].pic1txt;
+                document.getElementById('pic2txt').textContent = data[language].pic2txt;
+            });
+    }
+
+    // Add event listeners to the language flags
+    document.getElementById('en-flag').addEventListener('click', () => switchLanguage('en'));
+    document.getElementById('bg-flag').addEventListener('click', () => switchLanguage('bg'));
+
+    // Initially set the language to English
+    switchLanguage(currentLanguage);
+});
