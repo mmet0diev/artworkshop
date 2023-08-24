@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="stylesheet" href="styling/home.css">
+    <script src="js.js"></script>
 </head>
 <body>
     <div class="headersection">
@@ -12,9 +13,9 @@
         <div class="header-content">
             <nav id="sitenavigation">
                 <ul class="page-navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/gallery.html">Gallery</a></li>
-                    <li><a href="pages/about.html">About</a></li>
+                    <li><a id="home-link" href="index.html">Home</a></li>
+                    <li><a id="gallery-link" href="pages/gallery.html">Gallery</a></li>
+                    <li><a id="about-link" href="pages/about.html">About</a></li>
                 </ul>
             </nav>
             
@@ -29,16 +30,21 @@
     <div class="introexpo">
         <ul>
             <li>
-                <h2>Winter Scape(1):</h2>
+                <h2 id="welcome-text">Winter Scape(1):</h2>
                 <img src="imgs/winterscape1.jpg" alt="">
             </li>
             <li>
-                <h2>Winter Scape(2):</h2>
+                <h2 id="paragraph1">Winter Scape(2):</h2>
                 <img src="imgs/winterscape2.jpg" alt="">
             </li>
         </ul>
     </div>
     
-
+    
+    <script>
+        // Add event listeners to the language buttons
+        document.getElementById('en-button').addEventListener('click', switchToEnglish);
+        document.getElementById('bg-button').addEventListener('click', switchToBulgarian);
+    </script>
 </body>
 </html>
