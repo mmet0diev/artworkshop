@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', async function () {
     // Function to change the language
     async function switchLanguage(language) {
         currentLanguage = language;
+        localStorage.setItem('selectedLanguage', language); // Store the selected language
+
         try {
             // Fetch and parse the JSON data for the selected language
             const response = await fetch(`langs/home_langs.json`);
