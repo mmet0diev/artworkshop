@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-    let currentLanguage = "en"; // Default language
+    let currentLanguage = localStorage.getItem('selectedLanguage') || "en"; // Get the selected language from local storage or default to English
 
-    // Function to change the language
+    // Function to change the language on both pages
     function switchLanguage(language) {
         currentLanguage = language;
         localStorage.setItem('selectedLanguage', language); // Store the selected language
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Parse the JSON response
                 var data = JSON.parse(request.responseText);
 
-                // Update the content on your page with the language data
+                // Update the content on the home page
                 document.getElementById('sitetitle').textContent = data[language].sitetitle;
                 document.getElementById('home-link').textContent = data[language].home;
                 document.getElementById('gallery-link').textContent = data[language].gallery;
@@ -40,6 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Send the request
         request.send();
+
+        // Trigger a custom event to inform the gallery page to update its content
+        var event = new Event('languageChange');
+        document.dispatchEvent(event);
     }
 
     // Add event listeners to the language flags
@@ -51,6 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
         switchLanguage('bg');
     });
 
-    // Initially set the language to English
+    // Initially set the language
     switchLanguage(currentLanguage);
 });
