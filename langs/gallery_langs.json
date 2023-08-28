@@ -1,0 +1,35 @@
+{
+    "bg": {
+        "images": [
+            {
+                "title": "",
+                "description": "Описание",
+                "origin": "Произход: [Произход]",
+                "price": "Цена: $[Цена]"
+            },
+            {
+                "title": "",
+                "description": "Описание за Зимен Пейзаж 2 на български",
+                "origin": "Произход: [Произход]",
+                "price": "Цена: $[Цена]"
+            }
+        ]
+    },
+
+    "en": {
+        "images": [
+            {
+                "title": "",
+                "description": "Description",
+                "origin": "Origin: [Origin]",
+                "price": "Price: $[Price]"
+            },
+            {
+                "title": "",
+                "description": "Description",
+                "origin": "Origin: [Origin]",
+                "price": "Price: $[Price]"
+            }
+        ]
+    }
+}
