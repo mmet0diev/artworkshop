@@ -74,24 +74,6 @@ body {
 }
 
 
-/* Style for language flags */
-/* Move the language flags to the right side of the header */
-.language-flags {
-    display: flex;
-    align-items: center;
-    margin-left: auto; /* Push flags to the right */
-    align-self: flex-end; /* Align flags to the bottom of headersection */
-    padding-right: 20px; /* Add some spacing to the right */
-}
-
-.language-flags img {
-    cursor: pointer;
-    width: 20px; /* Set the width to 20px */
-    height: 20px; /* Set the height to 20px */
-    margin-left: 10px; /* Add spacing between flags */
-    padding-right: 20px;
-}
-
 /* Adjust the header-content to include space for flags */
 .header-content {
     display: flex;
